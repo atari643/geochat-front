@@ -27,7 +27,7 @@
         <input type="text" class="form-control" name="address">
     </div>
 
-    <a href="#" class="publish btn btn-primary">Publier</a>
+    <input type="submit" href="#" class="publish btn btn-primary" value="Publier" />
 </form>
 </div>
 
