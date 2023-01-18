@@ -26,8 +26,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="?">Messages</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?">Carte</a>
+                        <a class="nav-link active" aria-current="page" href="?page=post">Publier un message</a>
                     </li>
                 </ul>
             </div>
@@ -36,10 +39,12 @@
 
     <div class="container">
         <?php
-        $page = $_GET['page'] ?? 'map';
+        $page = $_GET['page'] ?? 'messages';
 
-        if ($page == 'map') {
-            include('map.php');
+        if ($page == 'messages') {
+            include('messages.php');
+        } else if ($page == "post") {
+            include('post.php');
         }
         ?>
     </div>
