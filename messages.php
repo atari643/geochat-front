@@ -4,7 +4,7 @@
         <input type="text" class="form-control" name="address" value="10 rue Sainte-Catherine, Bordeaux">
     </div>
 
-    <a href="#" class="search btn btn-primary">Rechercher</a>
+    <input type="submit" class="search btn btn-primary" value="Rechercher" />
 </form>
 
 <hr />

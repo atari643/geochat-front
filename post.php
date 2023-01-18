@@ -12,7 +12,7 @@
         <input type="password" class="form-control" name="password" placeholder="password">
     </div>
 
-    <input type="submit" href="#" class="login btn btn-primary" value="Identification" />
+    <input type="submit" class="login btn btn-primary" value="Identification" />
 </form>
 </div>
 
@@ -27,7 +27,7 @@
         <input type="text" class="form-control" name="address">
     </div>
 
-    <input type="submit" href="#" class="publish btn btn-primary" value="Publier" />
+    <input type="submit" class="publish btn btn-primary" value="Publier" />
 </form>
 </div>
 
