@@ -1,5 +1,5 @@
 async function initialize() {
-    document.querySelector(".post-form").style.display = "none";
+    // TODO: Traiter le formulaire
 };
 
-window.onload = initialize();
+window.addEventListener("load", initialize);

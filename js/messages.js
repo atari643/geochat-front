@@ -41,8 +41,8 @@ async function initialize() {
 
     document.querySelector('form.search-form').addEventListener("submit", (event) => {
         event.preventDefault(true);
-        // XXX: Todo
+        // TODO: Traiter le formulaire
     });
 };
 
-window.onload = initialize();
+window.addEventListener("load", initialize);

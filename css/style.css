@@ -1,0 +1,15 @@
+.show_if_connected {
+    display: none;
+}
+
+.is_connected .show_if_connected {
+    display: block;
+}
+
+.show_if_not_connected {
+    display: block;
+}
+
+.is_connected .show_if_not_connected {
+    display: none;
+}

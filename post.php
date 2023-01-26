@@ -1,34 +1,19 @@
-<div class="login-form">
-<div class="alert alert-info">
-    Merci de vous connecter!
-</div>
-<form>
-    <div class="mb-3">
-        <label for="addressInput" class="form-label">E-mail:</label>
-        <input type="email" class="form-control" name="email" placeholder="my@email.com">
+<form class="publish">
+    <div class="alert alert-success message-posted">
+        Message publié!
     </div>
-    <div class="mb-3">
-        <label for="addressInput" class="form-label">Mot de passe:</label>
-        <input type="password" class="form-control" name="password" placeholder="password">
+    <div class="alert alert-danger message-errors">
     </div>
-
-    <input type="submit" class="login btn btn-primary" value="Identification" />
-</form>
-</div>
-
-<div class="post-form">
-<form>
     <div class="mb-3">
         <label for="addressInput" class="form-label">Message:</label>
-        <textarea class="form-control" name="text"></textarea>
+        <textarea class="form-control" name="text">Bonjour tout le monde!</textarea>
     </div>
     <div class="mb-3">
         <label for="addressInput" class="form-label">Adresse:</label>
-        <input type="text" class="form-control" name="address">
+        <input type="text" class="form-control" name="address" value="25 rue Sainte Catherine, Bordeaux">
     </div>
 
-    <input type="submit" class="publish btn btn-primary" value="Publier" />
+    <input type="submit" href="#" class="publish btn btn-primary" value="Publier" />
 </form>
-</div>
 
 <script type="text/javascript" src="js/post.js"></script>

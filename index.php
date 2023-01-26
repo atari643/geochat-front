@@ -9,12 +9,14 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/he.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="leaflet/leaflet.js"></script>
     <script type="text/javascript" src="js/api.js"></script>
 </head>
 
-<body class="mb-4" onLoad="onBodyLoad()">
+<body class="mb-4">
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark mb-3">
         <div class="container">
             <a class="navbar-brand" href="?">
@@ -29,8 +31,14 @@
                 <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="?">Messages</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item show_if_connected">
                         <a class="nav-link active" aria-current="page" href="?page=post">Publier un message</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="?page=login">
+                        <div class="show_if_connected">Mon compte</div>
+                        <div class="show_if_not_connected">Connexion</div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -45,6 +53,8 @@
             include('messages.php');
         } else if ($page == "post") {
             include('post.php');
+        } else if ($page == "login") {
+            include('login.php');
         }
         ?>
     </div>
